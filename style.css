@@ -46,16 +46,13 @@ h2 {
     margin-left: 115px;
     margin-right: auto;
 }
-.git-hub {
+.git-hub img{
     margin:  70px;
     margin-left: 20px;
 }
 .telegram {
     margin: 210px;
     margin-top: -130px;
-}
-.git-hub:hover {
-    width: 70px;
 }
 p {
     text-align: center;
