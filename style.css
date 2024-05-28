@@ -2,15 +2,6 @@ body {
     font-family: 'Source Code Pro', sans-serif;
     background-image: linear-gradient(rgba(73, 75, 85, 0.692),rgba(73, 75, 85, 0.692)), url('images/background.png');
 }
-h2:hover {
-    transition: all 5s;
-    color: aqua;
-    border-color: black;
-}
-p:hover {
-    transition: all 5s;
-    color: black;
-}
 #logo{
     border-radius: 20%;
     align-items: center;
@@ -27,17 +18,15 @@ p:hover {
     width: 300px;
     height: 280px;
     border-radius: 10px;
-    backdrop-filter: blur(20px);
     background-color: rgba(0, 0, 0, 0.329);
     align-items: center;
     opacity: 1;
     margin: 250px;
     margin-left: calc(50% - 151px);
 }
-h2 {
+.profile-box h2 {
     color: rgba(21, 214, 21, 0.767);
-    text-align: center;
-}
+    text-align: center;}
 #logo {
     width: 70px;
     height: 70px;
@@ -50,11 +39,23 @@ h2 {
     margin:  70px;
     margin-left: 20px;
 }
+.git-hub img:hover {
+    transform: scale(1.2);
+}
 .telegram {
-    margin: 210px;
+    margin-left: 215px;
     margin-top: -130px;
+}
+.telegram:hover {
+    transform: scale(1.2);
 }
 p {
     text-align: center;
     color: gray;
+}
+p:hover {
+    color:aqua;
+}
+h2:hover {
+    color:aqua;
 }

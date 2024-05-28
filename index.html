@@ -10,15 +10,22 @@
 </head>
 <body>
     <div class="profile-box">
-        <img src="images/image.jpg" width="60px" id="logo">
-        <h2>TUNUDO</h2>
-        <p>Java, html and css dev</p>
-
-        <div class="git-hub">
-            <a href="https://github.com/Tunud0"><img src="images/connections/github.png" width="60px"></a>
-        </div>
-        <div class="telegram">
-            <a href="https://t.me/Tunudo"><img src="images/connections/telegram.png" width="60px"></a>
+        <img src="images/image.jpg" id="logo">
+        <h2>Tunudo</h2>
+        <p>
+            <span class="auto-type"></span>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                 var type = new Typed(".auto-type", { strings: ["Html and Css dev","Java dev"], typeSpeed: 80, backSpeed: 80, loop: true})
+            </script>
+        </p>
+        <div class="connections">
+            <div class="git-hub">
+                <a href="https://github.com/Tunud0"><img src="images/connections/github.png" width="60px"></a>
+            </div>
+            <div class="telegram">
+                <a href="https://t.me/Tunudo"><img src="images/connections/telegram.png" width="60px"></a>
+            </div>
         </div>
     </div>
 </body>
