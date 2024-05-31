@@ -8,7 +8,7 @@ body {
 }
 #logo:hover {
     transform: scale(0.8);
-    transition: all 3s;
+    transition: all 700ms;
     border-radius: 50%;
 }
 *{
@@ -42,6 +42,7 @@ body {
 }
 .git-hub img:hover {
     transform: scale(1.2);
+    transition: all 100ms;
 }
 .telegram {
     margin-left: 215px;
@@ -49,6 +50,7 @@ body {
 }
 .telegram:hover {
     transform: scale(1.2);
+    transition: all 100ms;
 }
 p {
     text-align: center;
