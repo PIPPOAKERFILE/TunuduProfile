@@ -7,8 +7,8 @@ body {
     align-items: center;
 }
 #logo:hover {
-    transform: scale(0.8);
-    transition: all 700ms;
+    transform: scale(0.7);
+    transition: all 200ms;
     border-radius: 50%;
 }
 *{
@@ -23,7 +23,11 @@ body {
     align-items: center;
     opacity: 1;
     margin: 250px;
-    margin-left: calc(50% - 151px);
+    margin-left: calc(50% - 150px);
+}
+.profile-box:hover {
+    transition: all 1000ms;
+    transform: scale(1.1);
 }
 .profile-box h2 {
     color: rgba(21, 214, 21, 0.767);
