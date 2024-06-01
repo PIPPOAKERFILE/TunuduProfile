@@ -28,6 +28,7 @@ body {
 .profile-box:hover {
     transition: all 1000ms;
     transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.43);
 }
 .profile-box h2 {
     color: rgba(21, 214, 21, 0.767);
@@ -41,8 +42,12 @@ body {
     margin-right: auto;
 }
 .git-hub img{
-    margin:  70px;
+    margin-top: 65px;
     margin-left: 20px;
+}
+.github {
+    width: 60px;
+    height: 60px;
 }
 .git-hub img:hover {
     transform: scale(1.2);
@@ -50,7 +55,7 @@ body {
 }
 .telegram {
     margin-left: 215px;
-    margin-top: -130px;
+    margin-top: -62px;
 }
 .telegram:hover {
     transform: scale(1.2);
