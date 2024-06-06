@@ -71,3 +71,152 @@ p:hover {
 h2:hover {
     color:aqua;
 }
+@media screen and (max-width: 298px) {
+    .profile-box {
+        width: 230px;
+        margin-left: calc(50% - 115px);
+    }
+    #logo {
+        margin-left: calc(50% - 35px);
+    }
+    .telegram {
+        margin-left: 65%;
+    }
+}
+@media screen and (max-width: 230px) {
+    .profile-box {
+        width: 190px;
+        margin-left: calc(50% - 95px);
+    }
+    #logo {
+        margin-left: calc(50% - 35px);
+    }
+    .telegram {
+        margin-left: 100px;
+    }
+    .git-hub {
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width: 188px) {
+    .profile-box {
+        width: 140px;
+        margin-left: calc(50% - 70px);
+    }
+    .git-hub {
+        margin-left: -10px;
+    }
+    .telegram {
+        margin-left: 70px;
+    }
+}
+@media screen and (max-width: 140px) {
+    .profile-box {
+        width: 100px;
+        margin-left: calc(50% - 50px);
+        height: 290px;
+    }
+    .git-hub {
+        width: 40px;
+        margin-left: -2px;
+    }
+    .telegram {
+        margin-top: -120px;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 100px) {
+    .profile-box {
+        width: 80px;
+        margin-left: calc(50% - 40px);
+    }
+    .git-hub {
+        margin-left: -10px;
+    }
+    .telegram {
+        margin-left: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 92px) {
+    .profile-box {
+        width: 70px;
+        margin-left: calc(50% - 35px);
+        height: 300px;
+    }
+    #logo {
+        width: 60px;
+        height: 60px;
+        margin-left: calc(50% - 30px);
+    }
+    .git-hub {
+        margin-left: -18px;
+    }
+    .telegram {
+        margin-left: 4px;
+    }
+    h2 {
+        font-size: 18px;
+        margin-left: calc(50% + -33px);
+    }
+}
+@media screen and (max-width: 70px) {
+    .profile-box {
+        width: 50px;
+        margin-left: calc(50% - 25px);
+        height: 270px;
+    }
+    #logo {
+        width: 40px;
+        height: 40px;
+        margin-left: calc(50% - 20px);
+    }
+    h2 {
+        font-size: 14px;
+        margin-left: calc(50% - 25px);
+    }
+    .auto-type {
+        font-size: 12px;
+    }
+    #telegram {
+        width: 48px;
+        margin-left: -3px;
+        nav-left: 10px;
+    }
+    #git-hub {
+        width: 48px;
+        margin-left: 17px;
+    }
+}
+@media screen and (max-width: 50px) {
+    .profile-box {
+        width: 30px;
+        margin-left: calc(50% - 15px);
+    }
+    #logo {
+        width: 20px;
+        height: 20px;
+        margin-left: calc(50% - 10px);
+    }
+    h2 {
+        font-size: 8px;
+        margin-left: calc(50% - 15px);
+    }
+    #telegram {
+        width: 24px;
+    }
+    .telegram {
+        margin-top: -80px;
+    }
+    .git-hub {
+        margin: -5px;
+    }
+    #git-hub {
+        width: 24px;
+    }
+    .git-hub {
+        margin-left: calc(50% - 31px);
+    }
+}
