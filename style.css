@@ -5,10 +5,16 @@ body {
 #logo{
     border-radius: 20%;
     align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
+    margin-top: 10px;
+    margin-left: 115px;
+    margin-right: auto;
+    transition: transform 1s;
 }
 #logo:hover {
     transform: scale(0.7);
-    transition: all 200ms;
     border-radius: 50%;
 }
 *{
@@ -24,42 +30,36 @@ body {
     opacity: 1;
     margin: 250px;
     margin-left: calc(50% - 150px);
+    transition: transform 1s;
 }
 .profile-box:hover {
-    transition: all 1000ms;
     transform: scale(1.1);
     background-color: rgba(0, 0, 0, 0.43);
 }
 .profile-box h2 {
     color: rgba(21, 214, 21, 0.767);
     text-align: center;}
-#logo {
-    width: 70px;
-    height: 70px;
-    border-radius: 20%;
-    margin-top: 10px;
-    margin-left: 115px;
-    margin-right: auto;
-}
 .git-hub img{
     margin-top: 65px;
     margin-left: 20px;
 }
-.github {
+
+.github img{
     width: 60px;
     height: 60px;
+    transition: transform 1s;
 }
 .git-hub img:hover {
     transform: scale(1.2);
-    transition: all 100ms;
 }
+
 .telegram {
     margin-left: 215px;
     margin-top: -62px;
+    transition: transform 1s;
 }
 .telegram:hover {
     transform: scale(1.2);
-    transition: all 100ms;
 }
 p {
     text-align: center;
