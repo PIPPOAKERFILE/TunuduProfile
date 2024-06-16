@@ -103,7 +103,8 @@ body {
 }
 @media screen and (max-width: 370px) {
     .profile-box {
-        width: 95%;margin-left: calc(50% - 47.5%);
+        width: 95%;
+        margin-left: calc(50% - 47.5%);
     }
     .git-hub {
         margin-left: calc(28% - 45px);
@@ -112,5 +113,72 @@ body {
 @media screen and (max-width: 295px) {
     .git-hub {
         margin-left: calc(25% - 45px);
+    }
+}
+@media screen and (max-width: 285px) {
+    .connections img {
+        width: 80px;
+    }
+    .git-hub {
+        margin-left: calc(30% - 45px);
+    }
+}
+@media screen and (max-width: 258px) {
+    .profile-box {
+        height: 450px;
+    }
+    .connections {
+        padding: 10px;
+    }
+    .git-hub {
+        margin-top: -20px;
+        margin-left: calc(50% - 40px);
+    }
+    .telegram {
+        margin-top: 5px;
+        margin-left: calc(50% - 40px);
+    }
+}
+@media screen and (max-width: 140px) {
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        margin-left: calc(50% - 50px);
+    }
+}
+@media screen and (max-width:  110px) {
+    .profile-image {
+        width: 70px;
+        height: 70px;
+        margin-left: calc(50% - 35px);
+    }
+}
+@media screen and (max-width: 92px) {
+    .title {
+        font-size: 17px;
+    }
+    .connections img {
+        width: 60px;
+        margin-left: calc(50% - 30px);
+    }
+    .profile-box {
+        height: 415px;
+    }
+}
+@media screen and (max-width: 84px) {
+    .profile-image {
+        width: 60px;
+        height: 60px;
+        margin-left: calc(50% - 30px);
+    }
+    .connections img {
+        width: 50px;
+        margin-left: calc(50% - 25px);
+    }
+    .title {
+        font-size: 15px;
+    }
+    .profile-box {
+        height: 380px;
     }
 }
