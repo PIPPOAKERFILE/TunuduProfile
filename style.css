@@ -1,184 +1,121 @@
-* {
-    padding: 0;
-    margin: 0;
-    cursor: url('images/cursor.png'),default;
+@font-face { font-family: Panton\ Black\ Caps; src: url(Panton\ Black\ Caps.ttf); }
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
 }
 *::selection {
-    color: aqua;
+    color:white;
+    background-color: transparent;
 }
 body {
-    font-family: 'Source Code Pro',sans-serif;
-    background-image: url('images/background.png');
+    background-image: url("/images/background.png");
 }
-.profile-box {
-    background-image: linear-gradient(rgba(43, 42, 42, 0.678),rgba(43, 42, 42, 0.678));
-    width: 35%;
-    height: 400px;
+.box {
+    text-align: center;
+    width: 400px;
+    height: 390px;
+    backdrop-filter: blur(25px);
     border-radius: 20px;
-    margin-left: calc(50% - 17.5%);
-    margin-top: 150px;
+    margin-left: calc(50% - 200px);
+    margin-top: 140px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0.39));
 }
-.profile-image {
-    width: 120px;
-    margin-top: 10px;
+.box #pfp {
+    width: 80px;
+    height: 80px;
     border-radius: 10px;
-    height: 120px;
-    margin-left: calc(50% - 60px);
+    transition: transform 2s;
+}
+.box #pfp:hover {
+    transform: rotate(360deg);
+    border-radius: 50%;
+}
+.box #name {
+    font-family: "Panton Black Caps", sans-serif;
+    background: linear-gradient(110deg,rgb(255, 0, 0),rgb(17, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: nameColored 5s linear infinite;
+}
+@keyframes nameColored {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(360deg);
+    }
+}
+.box #description {
+    font-family: 'Source Code Pro',sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color:black;
+    animation: descriptionColored 5s linear infinite;
+}
+@keyframes descriptionColored {
+    from {
+        color:rgb(231, 229, 229);
+    }
+    to {color:rgba(199, 199, 199, 0.726);}
+}
+.box .connections #git-hub,#telegram,#x,#twitch {
     transition: transform 1s;
+    color:white;
 }
-.profile-image:hover {
-    transform: scale(0.7);
-}
-.title {
-    text-align: center;
-    color:rgba(32, 231, 5, 0.829);
-}
-.description {
-    padding: 10px;
-    color: gray;
-    text-align: center;
-}
-.connections img {
-    width: 90px;
-}
-#connections {
-    padding: 40px;
-}
-.telegram {
-    margin-left: calc(21% - 45px);
-    transition: transform 1s;
-}
-.telegram:hover {
+.box .connections #git-hub:hover {
     transform: scale(1.1);
-    cursor: pointer;
+    color:rgb(122, 39, 122);
 }
-.git-hub {
-    margin-left: calc(35% - 45px);
-    transition: transform 1s;
-}
-.git-hub:hover {
+.box .connections #telegram:hover {
     transform: scale(1.1);
-    cursor: pointer;
+    color:rgb(0, 153, 255);
 }
-@media screen and (max-width: 1350px) {
-    .git-hub {
-        margin-left: calc(33% - 45px);
-    }
+.box .connections #x:hover {
+    transform: scale(1.1);
+    color:gray;
 }
-@media screen and (max-width: 1100px) {
-    .git-hub {
-        margin-left: calc(32% - 45px);
-    }
+.box .connections #twitch:hover {
+    transform: scale(1.1);
+    color:#6441a5;
 }
-@media screen and (max-width: 910px) {
-    .git-hub {
-        margin-left: calc(30% - 45px);
-    }
+.box .status {
+    width: 95%;
+    background-color: black;
+    margin-left: calc(50% - 47.5%);
+    border-radius: 20px;
+    height: 110px;
 }
-@media screen and (max-width: 850px) {
-    .profile-box {
-        width: 60%;
-        margin-left: calc(50% - 30%);
-    }
-    .git-hub {
-        margin-left: calc(34% - 45px);
-    }
+.box .status #discord-pfp {
+    margin-left: -60%;
+    margin-top: 10px;
 }
-@media screen and (max-width: 650px) {
-    .profile-box {
-        width: 70%;
-        margin-left: calc(50% - 35%);
-    }
+.status .discord-info {
+    margin-top: -90px;
+    
 }
-@media screen and (max-width: 570px) {
-    .git-hub {
-        margin-left: calc(30% - 45px);
-    }
+.status .discord-info #ds-name {
+    color:white;
+    font-family: "Panton Black Caps", sans-serif;
 }
-@media screen and (max-width: 450px) {
-    .profile-box {
+@media screen and (max-width: 500px) {
+    .box {
         width: 85%;
         margin-left: calc(50% - 42.5%);
     }
 }
-@media screen and (max-width: 370px) {
-    .profile-box {
-        width: 95%;
-        margin-left: calc(50% - 47.5%);
-    }
-    .git-hub {
-        margin-left: calc(28% - 45px);
+@media screen and (max-width: 360px) {
+    .status .discord-info {
+        margin-left: 20px;
     }
 }
-@media screen and (max-width: 295px) {
-    .git-hub {
-        margin-left: calc(25% - 45px);
+@media screen and (max-width: 325px) {
+    .box {
+        height: 420px;
     }
 }
-@media screen and (max-width: 285px) {
-    .connections img {
-        width: 80px;
-    }
-    .git-hub {
-        margin-left: calc(30% - 45px);
-    }
-}
-@media screen and (max-width: 258px) {
-    .profile-box {
-        height: 450px;
-    }
-    .connections {
-        padding: 10px;
-    }
-    .git-hub {
-        margin-top: -20px;
-        margin-left: calc(50% - 40px);
-    }
-    .telegram {
-        margin-top: 5px;
-        margin-left: calc(50% - 40px);
-    }
-}
-@media screen and (max-width: 140px) {
-    .profile-image {
-        width: 100px;
-        height: 100px;
-        margin-left: calc(50% - 50px);
-    }
-}
-@media screen and (max-width:  110px) {
-    .profile-image {
-        width: 70px;
-        height: 70px;
-        margin-left: calc(50% - 35px);
-    }
-}
-@media screen and (max-width: 92px) {
-    .title {
-        font-size: 17px;
-    }
-    .connections img {
-        width: 60px;
-        margin-left: calc(50% - 30px);
-    }
-    .profile-box {
-        height: 415px;
-    }
-}
-@media screen and (max-width: 84px) {
-    .profile-image {
-        width: 60px;
-        height: 60px;
-        margin-left: calc(50% - 30px);
-    }
-    .connections img {
-        width: 50px;
-        margin-left: calc(50% - 25px);
-    }
-    .title {
-        font-size: 15px;
-    }
-    .profile-box {
-        height: 380px;
+@media screen and (max-width: 296px) {
+    .box {
+        height: 470px;
     }
 }
